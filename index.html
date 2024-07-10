@@ -1,958 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>forbes</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-      a {
-        text-decoration: none;
-        color: black;
-      }
-      .ws-f {
-        font-family: "Work Sans", sans-serif;
-      }
-      .mw-f {
-        font-family: "Merriweather", serif;
-      }
-      .a-bs{
-        color: black;
-        font-size: 12px;
-      }
-      .a-bs:hover{
-        color: black;
-        text-decoration: underline;
-      }
-  
-    </style>
-  </head>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light ws-f bg-dark">
-      <div class="container fw-bold text-light">
-        <a class="navbar-brand" href="#"
-          ><img src="./images/forbes-logo.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav text">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-light"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                LEADERSHIP
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#"
-                >INNOVATION</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#"
-                >BILLIONARIES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">LISTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">STARTUPS</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-light"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                PODCASTS
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-light"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                VIDEOS
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">LIFE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger" href="#">SUBSCRIBE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger" href="#">LOGIN</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><img src="./images/icons8-search-24.png" alt=""
-              /></a>
-            </li>
-          </ul>
-        </div>
+  <title>forbes</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .ws-f {
+      font-family: "Work Sans", sans-serif;
+    }
+
+    .mw-f {
+      font-family: "Merriweather", serif;
+    }
+
+    .a-bs {
+      color: black;
+      font-size: 12px;
+    }
+
+    .a-bs:hover {
+      color: black;
+      text-decoration: underline;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .navbar>.container-xl {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ws-f bg-dark">
+    <div class="container fw-bold text-light">
+      <a class="navbar-brand" href="#"><img src="./images/forbes-logo.png" alt="forbes" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav text">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              LEADERSHIP
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">INNOVATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">BILLIONARIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">LISTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">STARTUPS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              PODCASTS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              VIDEOS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">LIFE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="#">SUBSCRIBE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="#">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./images/icons8-search-24.png" alt="" /></a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- body sections are starting from here -->
-    <div class="body-container container">
-      <div class="row row-main">
-        <div class="col-12 mt-3 mb-4">
-          <img
-            src="./images/2405240919_banner-1210X150.jpg"
-            style="height: auto; width: 100%"
-            alt=""
-          />
-        </div>
-        <div
-          class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8"
-        >
-          <div class="row" style="min-height: 80vh">
-            <!-- first col for imgs slider -->
-            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-7 col-xl-7 col-xxl-7 bg-succes" style="min-height: 55vh;">
-              <div
-                id="carouselExampleCaptions"
-                class="carousel slide position-relative"
-                data-bs-ride="carousel"
-              >
-                <div
-                  class="carousel-indicators position-absolute"
-                  style="top: 100%"
-                >
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="0"
-                    class="active bg-danger"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    class="bg-danger"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    class="bg-danger"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="./images/img_236374_farmer.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="cap d-flex flex-column fw-bold">
-                      <span class="mt-2"
-                        ><a
-                          href=""
-                          class="text-decoration-none ws-f bg-primary p-1 text-dark"
-                          style="font-size: 12px"
-                          >TAKE ONE: BIG STORY OF THE DAY</a
-                        ></span
-                      >
-                      <a href="" class="fs-4 text-decoration-none text-dark"
-                        >MNC's selling stake is very important signal; 3p
-                        Investments Prashanth Jain</a
-                      >
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="./images/img_236321_agnikul.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="cap d-flex flex-column fw-bold">
-                      <span class="mt-2"
-                        ><a
-                          href=""
-                          class="text-decoration-none ws-f bg-primary ws-f p-1 text-dark"
-                          style="font-size: 12px"
-                          >TAKE ONE: BIG STORY OF THE DAY</a
-                        ></span
-                      >
-                      <a href="" class="fs-4 text-decoration-none text-dark"
-                        >MNC's selling stake is very important signal; 3p
-                        Investments Prashanth Jain</a
-                      >
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="./images/img_236337_prashantjain.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="cap d-flex flex-column fw-bold">
-                      <span class="mt-2"
-                        ><a
-                          href=""
-                          class="text-decoration-none bg-primary p-1 ws-f text-dark"
-                          style="font-size: 12px"
-                          >TAKE ONE: BIG STORY OF THE DAY</a
-                        ></span
-                      >
-                      <a
-                        href=""
-                        class="fs-4 mw-f text-decoration-none text-dark"
-                        >MNC's selling stake is very important signal; 3p
-                        Investments Prashanth Jain</a
-                      >
-                    </div>
-                  </div>
-                </div>
+    </div>
+  </nav>
+  <!-- body sections are starting from here -->
+  <div class="body-container container">
+    <div class="row row-main">
+      <div class="col-12 mt-3 mb-4">
+        <img src="./images/2405240919_banner-1210X150.jpg" style="height: auto; width: 100%" alt="" />
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
+        <div class="row" style="min-height: 80vh">
+          <!-- first col for imgs slider -->
+          <div class="col-md-7 col-sm-7 col-xs-12 col-lg-7 col-xl-7 col-xxl-7 bg-succes" style="min-height: 55vh;">
+            <div id="carouselExampleCaptions" class="carousel slide position-relative" data-bs-ride="carousel">
+              <div class="carousel-indicators position-absolute" style="top: 100%">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                  class="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" class="bg-danger" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" class="bg-danger" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
               </div>
-            </div>
-            <!-- second column right to the img slider -->
-            <div class="col">
-              <div class="row lh-base mb-2">
-                <span
-                  ><a href="" style="font-size: 12px" class="ws-f mb-1"
-                    >NEWS</a
-                  ></span
-                >
-                <span
-                  ><a href="" class="mw-f fw-bold"
-                    >T20 world Cup Victory Parade: A celebration like no
-                    other</a
-                  ></span
-                >
-                <span
-                  ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                    ><span class="text-muted">by</span> Forbes India</a
-                  ></span
-                >
-              </div>
-              <div class="row lh-base mb-2">
-                <span
-                  ><a
-                    href=""
-                    style="font-size: 12px; color: #065052"
-                    class="ws-f"
-                    >LIFE ------------------------------------------</a
-                  ></span
-                >
-                <span
-                  ><a href="" class="mw-f fw-bold"
-                    >T20 world Cup Victory Parade: A celebration like no
-                    other</a
-                  ></span
-                >
-                <span
-                  ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                    ><span class="text-muted">by</span> Forbes India</a
-                  ></span
-                >
-              </div>
-              <div class="row lh-base mb-2">
-                <span
-                  ><a
-                    href=""
-                    style="font-size: 12px; color: violet"
-                    class="ws-f"
-                    >LIFE ------------------------------------------</a
-                  ></span
-                >
-                <span
-                  ><a href="" class="mw-f fw-bold"
-                    >T20 world Cup Victory Parade: A celebration like no
-                    other</a
-                  ></span
-                >
-                <span
-                  ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                    ><span class="text-muted">by</span> Forbes India</a
-                  ></span
-                >
-              </div>
-              <div class="row lh-base text-justify mb-2">
-                <span
-                  ><a
-                    href=""
-                    style="font-size: 12px; color: #e29226"
-                    class="ws-f"
-                    >FORBES INDIA TECH CONVERSATIONS</a
-                  ></span
-                >
-                <span
-                  ><a href="" class="mw-f fw-bold"
-                    >T20 world Cup Victory Parade: A celebration like no other
-                    Lorem ipsum dolor sit. Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit.</a
-                  ></span
-                >
-                <span
-                  ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                    ><span class="text-muted">by</span> Forbes India</a
-                  ></span
-                >
-              </div>
-            </div>
-            <!-- this column taken as row to display next section below img slider -->
-            <div class="col-12">
-              <img src="./images/bg.png" style="width: 100%" alt="" />
-            </div>
-            <div class="col-12">
-              <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-column fw-bold">
-                  <span class="mt-2 mb-2"
-                    ><a
-                      href=""
-                      class="text-decoration-none ws-f bg-secondary p-1 text-dark lh-lg"
-                      style="font-size: 12px"
-                      >INNOVATION</a
-                    ></span
-                  >
-                  <a href="" class="mw-f text-decoration-none text-dark lh-base"
-                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nam id deleniti vero facilis adipisci nemo esse asperiores
-                    nobis architecto.</a
-                  >
-                  <span
-                    ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                      ><span class="text-muted">by</span> Forbes India</a
-                    ></span
-                  >
-                  <p
-                    class="fw-normal mt-3 pb-4"
-                    style="
-                      font-size: 14px;
-                      font-family: Georgia;
-                      border-bottom: 1px dashed black;
-                    "
-                  >
-                    Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Ex nihil sapiente
-                    sint autem! Corrupti veritatis rem ullam autem consequatur
-                    dolores nesciunt nihil, ad nostrum?adipisicing elit. Saepe
-                    dolorum accusamus eos perferendis corporis, exercitationem
-                    modi possimus offi
-                    <a
-                      href=""
-                      style="color: blue; text-decoration: 1px solid blue"
-                      >Read more...</a
-                    >
-                  </p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-column fw-bold">
-                  <span class="mt-2 mb-2"
-                    ><a
-                      href=""
-                      class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
-                      style="font-size: 12px"
-                      >TAKE ONE: BIG STORY OF THE DAY</a
-                    ></span
-                  >
-                  <a href="" class="mw-f text-decoration-none text-dark lh-base"
-                    >MNC's selling stake is very important signal; 3p
-                    Investments Prashanth Jain</a
-                  >
-                  <span
-                    ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                      ><span class="text-muted">by</span> Forbes India</a
-                    ></span
-                  >
-                  <p
-                    class="fw-normal mt-3 pb-4"
-                    style="
-                      font-size: 14px;
-                      font-family: Georgia;
-                      border-bottom: 1px dashed black;
-                    "
-                  >
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Saepe dolorum accusamus eos perferendis corporis,
-                    exercitationem modi possimus offi
-                    <a
-                      href=""
-                      style="color: blue; text-decoration: 1px solid blue"
-                      >Read more...</a
-                    >
-                  </p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-column fw-bold">
-                  <span class="mt-2 mb-2"
-                    ><a
-                      href=""
-                      class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
-                      style="font-size: 12px"
-                      >NEWS</a
-                    ></span
-                  >
-                  <a href="" class="mw-f text-decoration-none text-dark lh-base"
-                    >MNC's selling stake is very important signal; 3p
-                    Investments Prashanth Jain</a
-                  >
-                  <span
-                    ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                      ><span class="text-muted">by</span> Forbes India</a
-                    ></span
-                  >
-                  <p
-                    class="fw-normal mt-3 pb-4"
-                    style="
-                      font-size: 14px;
-                      font-family: Georgia;
-                      border-bottom: 1px dashed black;
-                    "
-                  >
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Saepe dolorum accusamus eos perferendis corporis,
-                    exercitationem modi possimus offi
-                    <a
-                      href=""
-                      style="color: blue; text-decoration: 1px solid blue"
-                      >Read more...</a
-                    >
-                  </p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-column fw-bold">
-                  <span class="mt-2 mb-2"
-                    ><a
-                      href=""
-                      class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
-                      style="font-size: 12px"
-                      >NEWS</a
-                    ></span
-                  >
-                  <a href="" class="mw-f text-decoration-none text-dark lh-base"
-                    >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quos rerum nihil excepturi expedita qui ipsa tempore beatae
-                    aperiam repellat magni.</a
-                  >
-                  <span
-                    ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                      ><span class="text-muted">by</span> Forbes India</a
-                    ></span
-                  >
-                  <p
-                    class="fw-normal mt-3 pb-4"
-                    style="
-                      font-size: 14px;
-                      font-family: Georgia;
-                      border-bottom: 1px dashed black;
-                    "
-                  >
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Saepe dolorum accusamus eos perferendis corporis,
-                    exercitationem modi possimus offi
-                    <a
-                      href=""
-                      style="color: blue; text-decoration: 1px solid blue"
-                      >Read more...</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- next section -->
-            <div class="col-12">
-              <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                  <div class="div">
-                    <img
-                      src="./images/img_236337_prashantjain.jpg"
-                      style="height: auto; width: 100%"
-                      alt=""
-                    />
-                  </div>
-                  <div class="d-flex flex-column fw-bold">
-                    <span class="mt-2 mb-2"
-                      ><a
-                        href=""
-                        class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
-                        style="font-size: 12px"
-                        >TAKE ONE: BIG STORY OF THE DAY</a
-                      ></span
-                    >
-                    <a
-                      href=""
-                      class="mw-f text-decoration-none text-dark lh-base"
-                      >MNC's selling stake is very important signal; 3p
-                      Investments Prashanth Jain</a
-                    >
-                    <span
-                      ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                        ><span class="text-muted">by</span> Forbes India</a
-                      ></span
-                    >
-                    <p
-                      class="fw-normal mt-3"
-                      style="font-size: 14px; font-family: Georgia"
-                    >
-                      The former chief investment officer of HDFC AMC discusses
-                      why promoter
-                      <a
-                        href=""
-                        style="color: blue; text-decoration: 1px solid blue"
-                        >Read more...</a
-                      >
-                    </p>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/img_236374_farmer.jpg" class="d-block w-100" alt="..." />
+                  <div class="cap d-flex flex-column fw-bold">
+                    <span class="mt-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-dark"
+                        style="font-size: 12px">TAKE ONE: BIG STORY OF THE DAY</a></span>
+                    <a href="" class="fs-4 text-decoration-none text-dark">MNC's selling stake is very important signal;
+                      3p
+                      Investments Prashanth Jain</a>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                  <div class="div">
-                    <img
-                      src="./images/img_236371_thali-june24-800x600.jpg"
-                      style="height: auto; width: 100%"
-                      alt=""
-                    />
-                  </div>
-                  <div class="d-flex flex-column fw-bold">
-                    <span class="mt-2 mb-2"
-                      ><a
-                        href=""
-                        class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
-                        style="font-size: 12px"
-                        >NEWS</a
-                      ></span
-                    >
-                    <a
-                      href=""
-                      class="mw-f text-decoration-none text-dark lh-base"
-                      >How India Eats: Heat, unseasonal rains, virus infestation
-                      push veg thali prices higher in June</a
-                    >
-                    <span
-                      ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                        ><span class="text-muted">by</span> Forbes India</a
-                      ></span
-                    >
-                    <p
-                      class="fw-normal mt-3"
-                      style="font-size: 14px; font-family: Georgia"
-                    >
-                      Tomato prices surged 30 percent in June due to virus
-                      infestation cause
-                      <a
-                        href=""
-                        style="color: blue; text-decoration: 1px solid blue"
-                        >Read more...</a
-                      >
-                    </p>
+                <div class="carousel-item">
+                  <img src="./images/img_236321_agnikul.jpg" class="d-block w-100" alt="..." />
+                  <div class="cap d-flex flex-column fw-bold">
+                    <span class="mt-2"><a href="" class="text-decoration-none ws-f bg-primary ws-f p-1 text-dark"
+                        style="font-size: 12px">TAKE ONE: BIG STORY OF THE DAY</a></span>
+                    <a href="" class="fs-4 text-decoration-none text-dark">MNC's selling stake is very important signal;
+                      3p
+                      Investments Prashanth Jain</a>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                  <div class="div">
-                    <img
-                      src="./images/img_236310_dixontech.jpg"
-                      style="height: auto; width: 100%"
-                      alt=""
-                    />
-                  </div>
-                  <div class="d-flex flex-column fw-bold">
-                    <span class="mt-2 mb-2"
-                      ><a
-                        href=""
-                        class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
-                        style="font-size: 12px"
-                        >NEWS</a
-                      ></span
-                    >
-                    <a
-                      href=""
-                      class="mw-f text-decoration-none text-dark lh-base"
-                      >How India-China partnerships are reshaping component
-                      manufacturing</a
-                    >
-                    <span
-                      ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                        ><span class="text-muted">by</span> Forbes India</a
-                      ></span
-                    >
-                    <p
-                      class="fw-normal mt-3"
-                      style="font-size: 14px; font-family: Georgia"
-                    >
-                      Chinese investments will help Indian electronics makers
-                      rise up the co
-                      <a
-                        href=""
-                        style="color: blue; text-decoration: 1px solid blue"
-                        >Read more...</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- next section of text and football img -->
-            <div class="col-12">
-              <div class="row">
-                <div class=" col-xs-4 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
-                  <div class="row lh-base mb-2">
-                    <span
-                      ><a href="" style="font-size: 12px" class="ws-f mb-1"
-                        >NEWS</a
-                      ></span
-                    >
-                    <span
-                      ><a href="" class="mw-f fw-bold"
-                        >T20 world Cup Victory Parade: A celebration like no
-                        other</a
-                      ></span
-                    >
-                    <span
-                      ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                        ><span class="text-muted">by</span> Forbes India</a
-                      ></span
-                    >
-                  </div>
-                  <div class="row lh-base mb-2">
-                    <span
-                      ><a
-                        href=""
-                        style="font-size: 12px; color: #065052"
-                        class="ws-f"
-                        >LIFE ------------------------------------------</a
-                      ></span
-                    >
-                    <span
-                      ><a href="" class="mw-f fw-bold"
-                        >T20 world Cup Victory Parade: A celebration like no
-                        other</a
-                      ></span
-                    >
-                    <span
-                      ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                        ><span class="text-muted">by</span> Forbes India</a
-                      ></span
-                    >
-                  </div>
-                  <div class="row lh-base mb-2">
-                    <span
-                      ><a
-                        href=""
-                        style="font-size: 12px; color: violet"
-                        class="ws-f"
-                        >LIFE ------------------------------------------</a
-                      ></span
-                    >
-                    <span
-                      ><a href="" class="mw-f fw-bold"
-                        >T20 world Cup Victory Parade: A celebration like no
-                        other</a
-                      ></span
-                    >
-                    <span
-                      ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                        ><span class="text-muted">by</span> Forbes India</a
-                      ></span
-                    >
-                  </div>
-                  <div class="row lh-base text-justify mb-2">
-                    <span
-                      ><a
-                        href=""
-                        style="font-size: 12px; color: #e29226"
-                        class="ws-f"
-                        >FORBES INDIA TECH CONVERSATIONS</a
-                      ></span
-                    >
-                    <span
-                      ><a href="" class="mw-f fw-bold"
-                        >T20 world Cup Victory Parade: A celebration like no
-                        other Lorem ipsum dolor sit. Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.</a
-                      ></span
-                    >
-                    <span
-                      ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                        ><span class="text-muted">by</span> Forbes India</a
-                      ></span
-                    >
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 d-flex flex-column">
-                  <img
-                    src="./images/img_236443_smpotdsatfrance.jpg"
-                    class="mb-3 mt-4"
-                    style="height: auto; width: 100%"
-                    alt=""
-                  />
-                  <span class="mt-2 mb-2"
-                    ><a
-                      href=""
-                      class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
-                      style="font-size: 12px"
-                      >PHOTO OF THE DAY</a
-                    ></span
-                  >
-                  <div style="width: 80%; text-align: justify">
-                    <p class="ws-f fw-bold" style="font-size: 12px">
-                      France's players celebrate after winning the UEFA Euro
-                      2024 quarter-final football match between Portugal and
-                      France at the Volksparkstadion in Hamburg on July 5, 2024.
-                    </p>
-                  </div>
-                  <span class="mt-2 mb-2"
-                    ><a
-                      href=""
-                      class="text-decoration-none ws-f fw-bold text-dark lh-lg"
-                      style="font-size: 12px"
-                      ><i>Image: Franck Fife/AFP</i>
-                    </a></span
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- next divider -->
-            <div class="col-12">
-              <img src="./images/bg.png" style="width: 100%" alt="" />
-            </div>
-            <div class="col-12"><h2 class="fw-bold fs-1">Popular Now</h2></div>
-            <!-- 3 imges section -->
-            <div class="col-12">
-              <div class="row">
-                <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                  <div class="div">
-                    <img
-                      src="./images/img_236310_dixontech.jpg"
-                      style="height: 40%; width: 100%"
-                      alt=""
-                    />
-                  </div>
-                  <div class="d-flex flex-column fw-bold">
-                    <span class="mt-2 mb-2"
-                      ><a
-                        href=""
-                        class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
-                        style="font-size: 12px"
-                        >NEWS</a
-                      ></span
-                    >
-                    <a
-                      href=""
-                      class="mw-f text-decoration-none text-dark lh-base"
-                      >How India-China partnerships are reshaping component
-                      manufacturing</a
-                    >
-                    <span
-                      ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                        ><span class="text-muted">by</span> Forbes India</a
-                      ></span
-                    >
-                  </div>
-                </div>
-                <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                  <div class="div">
-                    <img
-                      src="./images/img_236443_smpotdsatfrance.jpg"
-                      style="height: 40%; width: 100%"
-                      alt=""
-                    />
-                  </div>
-                  <div class="d-flex flex-column fw-bold">
-                    <span class="mt-2 mb-2"
-                      ><a
-                        href=""
-                        class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
-                        style="font-size: 12px"
-                        >PHOTO OF THE DAY</a
-                      ></span
-                    >
-                    <a
-                      href=""
-                      class="mw-f text-decoration-none text-dark lh-base"
-                      >Photo of the day: UEFA Euro 2024 champions: France wins
-                    </a>
-                    <span
-                      ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                        ><span class="text-muted">by</span> Forbes India</a
-                      ></span
-                    >
-                  </div>
-                </div>
-                <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                  <div class="div">
-                    <img
-                      src="./images/img_236445_1_gettyimagessm.jpg"
-                      style="width: 100%; height: 40%"
-                      alt=""
-                    />
-                  </div>
-                  <div class="d-flex flex-column fw-bold">
-                    <span class="mt-2 mb-2"
-                      ><a
-                        href=""
-                        class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
-                        style="font-size: 12px"
-                        >NEWS</a
-                      ></span
-                    >
-                    <a
-                      href=""
-                      class="mw-f text-decoration-none text-dark lh-base"
-                      >UK Elections 2024: British-Indian women who won
-                      Parliament seats
-                    </a>
-                    <span
-                      ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                        ><span class="text-muted">by</span> Forbes India</a
-                      ></span
-                    >
+                <div class="carousel-item">
+                  <img src="./images/img_236337_prashantjain.jpg" class="d-block w-100" alt="..." />
+                  <div class="cap d-flex flex-column fw-bold">
+                    <span class="mt-2"><a href="" class="text-decoration-none bg-primary p-1 ws-f text-dark"
+                        style="font-size: 12px">TAKE ONE: BIG STORY OF THE DAY</a></span>
+                    <a href="" class="fs-4 mw-f text-decoration-none text-dark">MNC's selling stake is very important
+                      signal; 3p
+                      Investments Prashanth Jain</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- second column right to the img slider -->
+          <div class="col">
+            <div class="row lh-base mb-2">
+              <span><a href="" style="font-size: 12px" class="ws-f mb-1">NEWS</a></span>
+              <span><a href="" class="mw-f fw-bold">T20 world Cup Victory Parade: A celebration like no
+                  other</a></span>
+              <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span> Forbes
+                  India</a></span>
+            </div>
+            <div class="row lh-base mb-2">
+              <span><a href="" style="font-size: 12px; color: #065052" class="ws-f">LIFE
+                  ------------------------------------------</a></span>
+              <span><a href="" class="mw-f fw-bold">T20 world Cup Victory Parade: A celebration like no
+                  other</a></span>
+              <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span> Forbes
+                  India</a></span>
+            </div>
+            <div class="row lh-base mb-2">
+              <span><a href="" style="font-size: 12px; color: violet" class="ws-f">LIFE
+                  ------------------------------------------</a></span>
+              <span><a href="" class="mw-f fw-bold">T20 world Cup Victory Parade: A celebration like no
+                  other</a></span>
+              <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span> Forbes
+                  India</a></span>
+            </div>
+            <div class="row lh-base text-justify mb-2">
+              <span><a href="" style="font-size: 12px; color: #e29226" class="ws-f">FORBES INDIA TECH
+                  CONVERSATIONS</a></span>
+              <span><a href="" class="mw-f fw-bold">T20 world Cup Victory Parade: A celebration like no other
+                  Lorem ipsum dolor sit. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit.</a></span>
+              <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span> Forbes
+                  India</a></span>
+            </div>
+          </div>
+          <!-- this column taken as row to display next section below img slider -->
+          <div class="col-12">
+            <img src="./images/bg.png" style="width: 100%" alt="" />
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-column fw-bold">
+                <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-secondary p-1 text-dark lh-lg"
+                    style="font-size: 12px">INNOVATION</a></span>
+                <a href="" class="mw-f text-decoration-none text-dark lh-base">Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit.
+                  Nam id deleniti vero facilis adipisci nemo esse asperiores
+                  nobis architecto.</a>
+                <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span> Forbes
+                    India</a></span>
+                <p class="fw-normal mt-3 pb-4" style="
+                      font-size: 14px;
+                      font-family: Georgia;
+                      border-bottom: 1px dashed black;
+                    ">
+                  Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Ex nihil sapiente
+                  sint autem! Corrupti veritatis rem ullam autem consequatur
+                  dolores nesciunt nihil, ad nostrum?adipisicing elit. Saepe
+                  dolorum accusamus eos perferendis corporis, exercitationem
+                  modi possimus offi
+                  <a href="" style="color: blue; text-decoration: 1px solid blue">Read more...</a>
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-column fw-bold">
+                <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
+                    style="font-size: 12px">TAKE ONE: BIG STORY OF THE DAY</a></span>
+                <a href="" class="mw-f text-decoration-none text-dark lh-base">MNC's selling stake is very important
+                  signal; 3p
+                  Investments Prashanth Jain</a>
+                <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span> Forbes
+                    India</a></span>
+                <p class="fw-normal mt-3 pb-4" style="
+                      font-size: 14px;
+                      font-family: Georgia;
+                      border-bottom: 1px dashed black;
+                    ">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Saepe dolorum accusamus eos perferendis corporis,
+                  exercitationem modi possimus offi
+                  <a href="" style="color: blue; text-decoration: 1px solid blue">Read more...</a>
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-column fw-bold">
+                <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
+                    style="font-size: 12px">NEWS</a></span>
+                <a href="" class="mw-f text-decoration-none text-dark lh-base">MNC's selling stake is very important
+                  signal; 3p
+                  Investments Prashanth Jain</a>
+                <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span> Forbes
+                    India</a></span>
+                <p class="fw-normal mt-3 pb-4" style="
+                      font-size: 14px;
+                      font-family: Georgia;
+                      border-bottom: 1px dashed black;
+                    ">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Saepe dolorum accusamus eos perferendis corporis,
+                  exercitationem modi possimus offi
+                  <a href="" style="color: blue; text-decoration: 1px solid blue">Read more...</a>
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 d-flex flex-column fw-bold">
+                <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
+                    style="font-size: 12px">NEWS</a></span>
+                <a href="" class="mw-f text-decoration-none text-dark lh-base">Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit.
+                  Quos rerum nihil excepturi expedita qui ipsa tempore beatae
+                  aperiam repellat magni.</a>
+                <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span> Forbes
+                    India</a></span>
+                <p class="fw-normal mt-3 pb-4" style="
+                      font-size: 14px;
+                      font-family: Georgia;
+                      border-bottom: 1px dashed black;
+                    ">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Saepe dolorum accusamus eos perferendis corporis,
+                  exercitationem modi possimus offi
+                  <a href="" style="color: blue; text-decoration: 1px solid blue">Read more...</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- next section -->
+          <div class="col-12">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="div">
+                  <img src="./images/img_236337_prashantjain.jpg" style="height: auto; width: 100%" alt="" />
+                </div>
+                <div class="d-flex flex-column fw-bold">
+                  <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
+                      style="font-size: 12px">TAKE ONE: BIG STORY OF THE DAY</a></span>
+                  <a href="" class="mw-f text-decoration-none text-dark lh-base">MNC's selling stake is very important
+                    signal; 3p
+                    Investments Prashanth Jain</a>
+                  <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                      Forbes India</a></span>
+                  <p class="fw-normal mt-3" style="font-size: 14px; font-family: Georgia">
+                    The former chief investment officer of HDFC AMC discusses
+                    why promoter
+                    <a href="" style="color: blue; text-decoration: 1px solid blue">Read more...</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="div">
+                  <img src="./images/img_236371_thali-june24-800x600.jpg" style="height: auto; width: 100%" alt="" />
+                </div>
+                <div class="d-flex flex-column fw-bold">
+                  <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
+                      style="font-size: 12px">NEWS</a></span>
+                  <a href="" class="mw-f text-decoration-none text-dark lh-base">How India Eats: Heat, unseasonal rains,
+                    virus infestation
+                    push veg thali prices higher in June</a>
+                  <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                      Forbes India</a></span>
+                  <p class="fw-normal mt-3" style="font-size: 14px; font-family: Georgia">
+                    Tomato prices surged 30 percent in June due to virus
+                    infestation cause
+                    <a href="" style="color: blue; text-decoration: 1px solid blue">Read more...</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="div">
+                  <img src="./images/img_236310_dixontech.jpg" style="height: auto; width: 100%" alt="" />
+                </div>
+                <div class="d-flex flex-column fw-bold">
+                  <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
+                      style="font-size: 12px">NEWS</a></span>
+                  <a href="" class="mw-f text-decoration-none text-dark lh-base">How India-China partnerships are
+                    reshaping component
+                    manufacturing</a>
+                  <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                      Forbes India</a></span>
+                  <p class="fw-normal mt-3" style="font-size: 14px; font-family: Georgia">
+                    Chinese investments will help Indian electronics makers
+                    rise up the co
+                    <a href="" style="color: blue; text-decoration: 1px solid blue">Read more...</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- next section of text and football img -->
+          <div class="col-12">
+            <div class="row">
+              <div class=" col-xs-4 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="row lh-base mb-2">
+                  <span><a href="" style="font-size: 12px" class="ws-f mb-1">NEWS</a></span>
+                  <span><a href="" class="mw-f fw-bold">T20 world Cup Victory Parade: A celebration like no
+                      other</a></span>
+                  <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                      Forbes India</a></span>
+                </div>
+                <div class="row lh-base mb-2">
+                  <span><a href="" style="font-size: 12px; color: #065052" class="ws-f">LIFE
+                      ------------------------------------------</a></span>
+                  <span><a href="" class="mw-f fw-bold">T20 world Cup Victory Parade: A celebration like no
+                      other</a></span>
+                  <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                      Forbes India</a></span>
+                </div>
+                <div class="row lh-base mb-2">
+                  <span><a href="" style="font-size: 12px; color: violet" class="ws-f">LIFE
+                      ------------------------------------------</a></span>
+                  <span><a href="" class="mw-f fw-bold">T20 world Cup Victory Parade: A celebration like no
+                      other</a></span>
+                  <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                      Forbes India</a></span>
+                </div>
+                <div class="row lh-base text-justify mb-2">
+                  <span><a href="" style="font-size: 12px; color: #e29226" class="ws-f">FORBES INDIA TECH
+                      CONVERSATIONS</a></span>
+                  <span><a href="" class="mw-f fw-bold">T20 world Cup Victory Parade: A celebration like no
+                      other Lorem ipsum dolor sit. Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit.</a></span>
+                  <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                      Forbes India</a></span>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 d-flex flex-column">
+                <img src="./images/img_236443_smpotdsatfrance.jpg" class="mb-3 mt-4" style="height: auto; width: 100%"
+                  alt="" />
+                <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
+                    style="font-size: 12px">PHOTO OF THE DAY</a></span>
+                <div style="width: 80%; text-align: justify">
+                  <p class="ws-f fw-bold" style="font-size: 12px">
+                    France's players celebrate after winning the UEFA Euro
+                    2024 quarter-final football match between Portugal and
+                    France at the Volksparkstadion in Hamburg on July 5, 2024.
+                  </p>
+                </div>
+                <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f fw-bold text-dark lh-lg"
+                    style="font-size: 12px"><i>Image: Franck Fife/AFP</i>
+                  </a></span>
+              </div>
+            </div>
+          </div>
+          <!-- next divider -->
+          <div class="col-12">
+            <img src="./images/bg.png" style="width: 100%" alt="" />
+          </div>
+          <div class="col-12">
+            <h2 class="fw-bold fs-1">Popular Now</h2>
+          </div>
+          <!-- 3 imges section -->
+          <div class="col-12">
+            <div class="row">
+              <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="div">
+                  <img src="./images/img_236310_dixontech.jpg" style="height: 40%; width: 100%" alt="" />
+                </div>
+                <div class="d-flex flex-column fw-bold">
+                  <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
+                      style="font-size: 12px">NEWS</a></span>
+                  <a href="" class="mw-f text-decoration-none text-dark lh-base">How India-China partnerships are
+                    reshaping component
+                    manufacturing</a>
+                  <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                      Forbes India</a></span>
+                </div>
+              </div>
+              <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="div">
+                  <img src="./images/img_236443_smpotdsatfrance.jpg" style="height: 40%; width: 100%" alt="" />
+                </div>
+                <div class="d-flex flex-column fw-bold">
+                  <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
+                      style="font-size: 12px">PHOTO OF THE DAY</a></span>
+                  <a href="" class="mw-f text-decoration-none text-dark lh-base">Photo of the day: UEFA Euro 2024
+                    champions: France wins
+                  </a>
+                  <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                      Forbes India</a></span>
+                </div>
+              </div>
+              <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="div">
+                  <img src="./images/img_236445_1_gettyimagessm.jpg" style="width: 100%; height: 40%" alt="" />
+                </div>
+                <div class="d-flex flex-column fw-bold">
+                  <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-dark lh-lg"
+                      style="font-size: 12px">NEWS</a></span>
+                  <a href="" class="mw-f text-decoration-none text-dark lh-base">UK Elections 2024: British-Indian women
+                    who won
+                    Parliament seats
+                  </a>
+                  <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                      Forbes India</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- big column on right side  -->
-        <div class="col bg-light">
-          <div class="row">
-            <div class="col-12">
-          <div class="forbes-section d-flex flex-column justify-content-center align-items-center gap-2">
-            <div
-              class="forbes-cover d-flex justify-content-center position-relative mt-5"
-            >
-              <img
-                src="./images/forbesindiacover_bg_20240702095423_300x500.jpg"
-                style="height: auto; width: 70%"
-                alt=""
-              />
-              <div
-                style="
+      </div>
+      <!-- big column on right side  -->
+      <div class="col bg-light">
+        <div class="row">
+          <div class="col-12">
+            <div class="forbes-section d-flex flex-column justify-content-center align-items-center gap-2">
+              <div class="forbes-cover d-flex justify-content-center position-relative mt-5">
+                <img src="./images/forbesindiacover_bg_20240702095423_300x500.jpg" style="height: auto; width: 70%"
+                  alt="" />
+                <div style="
                   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                   height: 35%;
                   width: 31%;
                   top: 65%;
                   left: 65%;
                 "
-                class="rounds p-1 position-absolute bg-light border d-flex flex-column align-items-center justify-content-center border-danger border-5 rounded-circle"
-              >
-                <span
-                  ><a style="font-size: 23px" class="mw-f m-2 text-danger" href=""
-                    >Buy</a
-                  ></span
-                >
-                <span
-                  ><a class="mw-f fw-bold" href="" style="font-size: 11px"
-                    >Digital Copy</a
-                  ></span
-                >
+                  class="rounds p-1 position-absolute bg-light border d-flex flex-column align-items-center justify-content-center border-danger border-5 rounded-circle">
+                  <span><a style="font-size: 23px" class="mw-f m-2 text-danger" href="">Buy</a></span>
+                  <span><a class="mw-f fw-bold" href="" style="font-size: 11px">Digital Copy</a></span>
+                </div>
+              </div>
+              <div class="text" style="width: 85%;">
+                <h6 class="ws-f fw-bold fs-5 text-center">Subscribe today and save upto 76% off the cover price.</h6>
+                <p class="text-center ws-f text-muted" style="font-size: 12px;">All Access + Weekly Delivery.
+                  Both the print magazine and full digital access.</p>
               </div>
             </div>
-            <div class="text" style="width: 85%;">
-            <h6 class="ws-f fw-bold fs-5 text-center">Subscribe today and save upto 76% off the cover price.</h6>
-            <p class="text-center ws-f text-muted" style="font-size: 12px;">All Access + Weekly Delivery.
-              Both the print magazine and full digital access.</p>
-            </div>
-          </div>
           </div>
           <!-- this is a divider -->
-           <div class="col-12"><img src="./images/Annotation 2024-07-07 161027.png" style="width: 100%;height: auto;" alt=""/></div>
-           <div class="col-12 dummy" style="height: 40vh;"></div>
-           <div class="col-12">
-            <div class="img-div position-relative"><img src="./images/NBN-logo6.jpg" style="width: 100%;height: auto;" alt="">
+          <div class="col-12"><img src="./images/Annotation 2024-07-07 161027.png" style="width: 100%;height: auto;"
+              alt="" /></div>
+          <div class="col-12 dummy" style="height: 40vh;"></div>
+          <div class="col-12">
+            <div class="img-div position-relative"><img src="./images/NBN-logo6.jpg" style="width: 100%;height: auto;"
+                alt="">
               <div style="width: 80%;" class="text-inside  position-absolute top-0 d-flex flex-column p-2 ps-3">
                 <h2 class="fs-3 text-dark fw-bold">News by numbers</h2>
-                <span><a class="mw-f text-white" style="font-size: 14px;" href="">20 years that changed the world: A brief history of Facebook
-                </a></span>
-                <span
-                ><a href="" style="font-size: 12px" class="ws-f fw-bold text-white"
-                  ><span>by</span> Forbes India</a
-                ></span
-              >   
+                <span><a class="mw-f text-white" style="font-size: 14px;" href="">20 years that changed the world: A
+                    brief history of Facebook
+                  </a></span>
+                <span><a href="" style="font-size: 12px" class="ws-f fw-bold text-white"><span>by</span> Forbes
+                    India</a></span>
               </div>
             </div>
-           </div>
-           <!-- next section -->
-           <div class="col-12 mt-3">
+          </div>
+          <!-- next section -->
+          <div class="col-12 mt-3">
             <div class="row">
               <div style="font-size: 12px;" class="ws-f col-12 mb-2">MENTORS AND MAVENS</div>
-              <div class="col-4 bg-light"><img src="./images/img_236282_malissawithbookgaaquarium.jpg" style="height: auto;width: 100%;" alt=""></div>
+              <div class="col-4 bg-light"><img src="./images/img_236282_malissawithbookgaaquarium.jpg"
+                  style="height: auto;width: 100%;" alt=""></div>
               <div class="col-8 mw-f fw-bold p-0">Celebrate those who work smarter, not longer: Malissa Clark
               </div>
             </div>
-           </div>
-           <div class="col-12 mt-3">
+          </div>
+          <div class="col-12 mt-3">
             <div class="row">
-              <div style="font-size: 12px;" class="ws-f col-12 mb-2">INNOVATION ----------------------------------------------</div>
-              <div class="col-4 bg-light"><img src="./images/img_236269_deep-tech.jpg" style="height: auto;width: 100%;" alt=""></div>
+              <div style="font-size: 12px;" class="ws-f col-12 mb-2">INNOVATION
+                ----------------------------------------------</div>
+              <div class="col-4 bg-light"><img src="./images/img_236269_deep-tech.jpg" style="height: auto;width: 100%;"
+                  alt=""></div>
               <div class="col-8 mw-f fs-6 fw-bold p-0">Celebrate those who work smarter, not longer: Malissa Clark
               </div>
             </div>
-           </div>
-           <!-- DIVIDER -->
-            <div class="col-12 mt-2"><img src="./images/Annotation 2024-07-07 161027.png" style="width: 100%;" alt=""></div>
-        </div>
+          </div>
+          <!-- DIVIDER -->
+          <div class="col-12 mt-2"><img src="./images/Annotation 2024-07-07 161027.png" style="width: 100%;" alt="">
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
 
 
@@ -960,36 +568,45 @@
 
 
 
-<!-- new black section starting from here -->
-    <div class="black-section-container mt-5 pt-3 container-fluid" style="background-color: black;">
-      <div class="black-section container">
-        <!-- main row of black section -->
-        <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-light p-2 ws-f"><h2 style="font-weight: bolder;font-size: 40px;">Multimedia</h2></div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6  d-flex align-items-center justify-content-end">
+  <!-- new black section starting from here -->
+  <div class="black-section-container mt-5 pt-3 container-fluid" style="background-color: black;">
+    <div class="black-section container">
+      <!-- main row of black section -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-light p-2 ws-f">
+          <h2 style="font-weight: bolder;font-size: 40px;">Multimedia</h2>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6  d-flex align-items-center justify-content-end">
           <div class="text-bs overflow-hidden d-flex justify-content-end align-items-center gap-3">
             <a href="" class="ws-f rounded-pill bg-light p-1 px-3 a-bs">ALL</a>
-            <div class="div d-flex gap-1 align-items-center justify-content-center"><img src="./images/icons8-camera-25.png" alt=""> <a href="" class="a-bs text-white">PHOTO</a></div>
-            <div class="div d-flex gap-1 align-items-center justify-content-center"><img src="./images/icons8-video-camera-25.png" alt=""> <a href="" class="a-bs text-white">VIDEO</a></div>
-            <div class="div d-flex gap-1 align-items-center justify-content-center"><img src="./images/icons8-headphone-25.png" alt=""> <a href="" class="a-bs text-white">AUDIO</a></div>
+            <div class="div d-flex gap-1 align-items-center justify-content-center"><img
+                src="./images/icons8-camera-25.png" alt=""> <a href="" class="a-bs text-white">PHOTO</a></div>
+            <div class="div d-flex gap-1 align-items-center justify-content-center"><img
+                src="./images/icons8-video-camera-25.png" alt=""> <a href="" class="a-bs text-white">VIDEO</a></div>
+            <div class="div d-flex gap-1 align-items-center justify-content-center"><img
+                src="./images/icons8-headphone-25.png" alt=""> <a href="" class="a-bs text-white">AUDIO</a></div>
           </div>
         </div>
         <div class="col-12">
           <div class="row">
             <!-- col of two big sections dark -->
-             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-4 d-flex flex-column gap-2">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-4 d-flex flex-column gap-2">
               <img src="./images/indiaeconomyrates_sm.jpg" class="mt-3" style="height: auto;width: 100%;" alt="">
-              <span><a href="" class="mw-f text-white fs-3" >Why the RBI's fintech repository can be a game changer for startups in the sector
-              </a></span>
-               <span><a href="" class="text-white" style="font-size: 12px;">By <b>Harichandran Arakali, Nasrin Sultana</b></a></span>
-              
-             </div>
-             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-              <div class="row"> 
+              <span><a href="" class="mw-f text-white fs-3">Why the RBI's fintech repository can be a game changer for
+                  startups in the sector
+                </a></span>
+              <span><a href="" class="text-white" style="font-size: 12px;">By <b>Harichandran Arakali, Nasrin
+                    Sultana</b></a></span>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+              <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column mb-4 gap-3">
                   <img src="./images/kapilchoprasm.jpg" style="width: 100%;height: auto;" alt="">
                   <div class="d-flex flex-column gap-1" style="width: 90%;">
-                    <a href="" class="text-white mw-f fs-6" >Meet Kapil Chopra: The hotelier determined to fix India's public health system
+                    <a href="" class="text-white mw-f fs-6">Meet Kapil Chopra: The hotelier determined to fix India's
+                      public health system
                     </a>
                     <span><a href="" class="text-white" style="font-size: 12px;">By <b>Neha Bothra</b></a></span>
                   </div>
@@ -997,7 +614,8 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column mb-4 gap-3">
                   <img src="./images/blumeventurespathbreakerssm.jpg" style="width: 100%;height: auto;" alt="">
                   <div class="d-flex flex-column  gap-1" style="width: 90%;">
-                    <a href="" class="text-white mw-f fs-6" >The startup saga: Of gutsy founders, audacious VCs and the hunt for the next unicorn
+                    <a href="" class="text-white mw-f fs-6">The startup saga: Of gutsy founders, audacious VCs and the
+                      hunt for the next unicorn
                     </a>
                     <span><a href="" class="text-white" style="font-size: 12px;">By <b>Neha Bothra</b></a></span>
                   </div>
@@ -1006,247 +624,203 @@
                   <div class="row">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column mb-4 gap-3">
                       <img src="./images/upigoesglobal.jpg" style="width: 100%;height: auto;" alt="">
-                  <div class="d-flex flex-column gap-1" style="width: 90%;">
-                    <a href="" class="text-white mw-f" style="font-size: 14px;" >The startup saga: Of gutsy founders, audacious VCs and the hunt for the next unicorn
-                    </a>
-                    <span><a href="" class="text-white" style="font-size: 12px;">By <b>Neha Bothra</b></a></span>
-                  </div>
+                      <div class="d-flex flex-column gap-1" style="width: 90%;">
+                        <a href="" class="text-white mw-f" style="font-size: 14px;">The startup saga: Of gutsy founders,
+                          audacious VCs and the hunt for the next unicorn
+                        </a>
+                        <span><a href="" class="text-white" style="font-size: 12px;">By <b>Neha Bothra</b></a></span>
+                      </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column mb-4 gap-3">
                       <img src="./images/fancodesportsunltdsmrevised.jpg" style="width: 100%;height: auto;" alt="">
-                  <div class="d-flex flex-column gap-1" style="width: 90%;">
-                    <a href="" class="text-white mw-f fs-7" style="font-size: 14px;" >The startup saga: Of gutsy founders, audacious VCs and the hunt for the next unicorn
-                    </a>
-                    <span><a href="" class="text-white" style="font-size: 12px;">By <b>Neha Bothra</b></a></span>
-                  </div>
+                      <div class="d-flex flex-column gap-1" style="width: 90%;">
+                        <a href="" class="text-white mw-f fs-7" style="font-size: 14px;">The startup saga: Of gutsy
+                          founders, audacious VCs and the hunt for the next unicorn
+                        </a>
+                        <span><a href="" class="text-white" style="font-size: 12px;">By <b>Neha Bothra</b></a></span>
+                      </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column mb-4 gap-3">
                       <img src="./images/madhumitamurgiabookshelvessm.jpg" style="width: 100%;height: auto;" alt="">
-                  <div class="d-flex flex-column gap-1" style="width: 90%;">
-                    <a href="" class="text-white mw-f fs-7" style="font-size: 14px;" >The startup saga: Of gutsy founders, audacious VCs and the hunt for the next unicorn
-                    </a>
-                    <span><a href="" class="text-white" style="font-size: 12px;">By <b>Neha Bothra</b></a></span>
-                  </div>
+                      <div class="d-flex flex-column gap-1" style="width: 90%;">
+                        <a href="" class="text-white mw-f fs-7" style="font-size: 14px;">The startup saga: Of gutsy
+                          founders, audacious VCs and the hunt for the next unicorn
+                        </a>
+                        <span><a href="" class="text-white" style="font-size: 12px;">By <b>Neha Bothra</b></a></span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-             </div>
+            </div>
           </div>
         </div>
         <!-- divider -->
-         <div class="col-12 mt-2 mb-3"><img src="./images/bg.png" alt="" style="height: auto;width: 100%;"></div>
-        </div>
+        <div class="col-12 mt-2 mb-3"><img src="./images/bg.png" alt="" style="height: auto;width: 100%;"></div>
       </div>
-    </div>
-
-
-
-
-    <!-- next sections begins here from the bottom of black section -->
-     <div class="section3-container mt-4 container-fluid">
-      <div class="section3 container">
-        <div class="row">
-          <div class="col-12"><img src="./images/bg.png" alt="" style="width: 100%;"></div>
-          <div class="col-6 bg-danger d-flex flex-column">
-            <div class="forbes-lists"><img src="./images/forbeslists.png" alt=""></div>
-            <div id="carouselExampleControls" class="carousel slide w-50" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./images/lead_900x475_20240215103055_230x62.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./images/w-power-banner-900x475_20240315055156_230x62.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./images/meta-dstars_20231026125603_230x62.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./images/rich-banner(910-x475)_20231012113106_230x62.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+
+
+
+
+  <!-- next sections begins here from the bottom of black section -->
+  <div class="section3-container mt-4 container-fluid">
+    <div class="section3 container">
+      <div class="row">
+        <div class="col-12"><img src="./images/bg.png" alt="" style="width: 100%;"></div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 bg-danger d-flex flex-column">
+          <div class="forbes-lists"><img src="./images/forbeslists.png" alt=""></div>
+          <div id="carouselExampleControls" class="carousel slide w-50" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/lead_900x475_20240215103055_230x62.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/w-power-banner-900x475_20240315055156_230x62.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/meta-dstars_20231026125603_230x62.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/rich-banner(910-x475)_20231012113106_230x62.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="col-6"></div>
-          <!-- next section below the slider -->
-           <col-12><img class="mt-3 mb-3" src="./images/bg.png" alt="" style="width: 100%;"></col-12>
-           <div class="col-12"><h2 class="fw-bold fs-1">More stories</h2></div>
-           <!-- 3 imges section -->
-           <div class="col-9">
-             <div class="row">
-               <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                 <div class="div">
-                   <img
-                     src="./images/img_236146_solana.jpg"
-                     style="height: 40%; width: 100%"
-                     alt=""
-                   />
-                 </div>
-                 <div class="d-flex flex-column fw-bold">
-                   <span class="mt-2 mb-2"
-                     ><a
-                       href=""
-                       class="text-decoration-none ws-f bg-success p-1 text-white lh-lg"
-                       style="font-size: 12px"
-                       >CRYPTOCURRENCY</a
-                     ></span
-                   >
-                   <a
-                     href=""
-                     class="mw-f text-decoration-none text-dark lh-base"
-                     >Solana Foundation launches new tools to enhance blockchain transactions</a
-                   >
-                   <span
-                     ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                       ><span class="text-muted">by</span> Forbes India</a
-                     ></span
-                   >
-                   <p class="fw-normal mt-3 pb-4" style="font-size: 14px;font-family: Georgia;">21Shares has submitted a registration statement to the U.S. Securities
-                    ... <a style="color: blue; text-decoration: 1px solid blue" href="">Read more</a></p>
-                    <a href="" class="fw-normal ws-f text-reset" style="font-size: 12px;overflow: hidden;" >EXPLAINERS -------------------------------------</a>
-                    <div class="row mt-2 bottom-img-txt">
-                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"><img src="./images/img_215535_unemploymentrateinindia.jpg" style="width: 100%;height: auto;" alt=""></div>
-                      <div class="col d-flex flex-column gap-2">
-                        <a
-                     href=""
-                     class="mw-f text-decoration-none text-dark lh-base"
-                     >Unemployment rate in India (2008 to 2024): Current rate, historical trends and more</a
-                   >
-                   <span
-                     ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                       ><span class="text-muted">by</span> Forbes India</a
-                     ></span>
-                      </div>
-
-                    </div>
-
-                 </div>
-               </div>
-               <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                 <div class="div">
-                   <img
-                     src="./images/img_236487_section80d.jpg"
-                     style="height: 40%; width: 100%"
-                     alt=""
-                   />
-                 </div>
-                 <div class="d-flex flex-column fw-bold">
-                   <span class="mt-2 mb-2"
-                     ><a
-                       href=""
-                       class="text-decoration-none ws-f bg-info p-1 text-white lh-lg"
-                       style="font-size: 12px"
-                       >EXPLAINERS</a
-                     ></span
-                   >
-                   <a
-                     href=""
-                     class="mw-f text-decoration-none text-dark lh-base"
-                     >Section 80D of income tax act: Deductions, eligibility and benefits</a
-                   >
-                   <span
-                     ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                       ><span class="text-muted">by</span> Forbes India</a
-                     ></span
-                   >
-                   <p class="fw-normal mt-3 pb-4" style="font-size: 14px;font-family: Georgia;">21Shares has submitted a registration statement to the U.S. Securities
-                    ... <a style="color: blue; text-decoration: 1px solid blue" href="">Read more</a></p>
-                    <a href="" class="fw-normal ws-f text-reset" style="font-size: 12px;" >NEWS -------------------------------------</a>
-                    <div class="row mt-2 bottom-img-txt">
-                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"><img src="./images/img_236445_1_gettyimagessm.jpg" style="width: 100%;height: auto;" alt=""></div>
-                      <div class="col d-flex flex-column gap-2">
-                        <a
-                     href=""
-                     class="mw-f text-decoration-none text-dark lh-base"
-                     >UK Elections 2024: British-Indian women who won Parliament seats</a
-                   >
-                   <span
-                     ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                       ><span class="text-muted">by</span> Forbes India</a
-                     ></span>
-                      </div>
-
-                    </div>
-
-                 </div>
-               </div>
-               <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                 <div class="div">
-                   <img
-                     src="./images/img_236435_reading_shutterstock_642159373_sm.jpg"
-                     style="height: 40%; width: 100%"
-                     alt=""
-                   />
-                 </div>
-                 <div class="d-flex flex-column fw-bold">
-                   <span class="mt-2 mb-2"
-                     ><a
-                       href=""
-                       class="text-decoration-none ws-f bg-primary p-1 text-white lh-lg"
-                       style="font-size: 12px"
-                       >NEWS</a
-                     ></span
-                   >
-                   <a
-                     href=""
-                     class="mw-f text-decoration-none text-dark lh-base"
-                     >From NEET-UG paper leak to paradoxical Indo-China relationship: Our top stories of the week</a
-                   >
-                   <span
-                     ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                       ><span class="text-muted">by</span> Forbes India</a
-                     ></span
-                   >
-                   <p class="fw-normal mt-3 pb-4" style="font-size: 14px;font-family: Georgia;">Read more about why women adopt a different networking technique in pr...<a style="color: blue; text-decoration: 1px solid blue" href="">Read more</a></p>
-                    <a href="" class="fw-normal ws-f text-reset" style="font-size: 12px;" >LIFE -------------------------------------</a>
-                    <div class="row mt-2 bottom-img-txt">
-                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"><img src="./images/img_236438_autoroute_connecte.jpg" style="width: 100%;height: auto;" alt=""></div>
-                      <div class="col d-flex flex-column gap-2">
-                        <a
-                     href=""
-                     class="mw-f text-decoration-none text-dark lh-base"
-                     >First stretch of smart highway opens in the US</a
-                   >
-                   <span
-                     ><a href="" style="font-size: 12px" class="ws-f fw-bold"
-                       ><span class="text-muted">by</span> Forbes India</a
-                     ></span>
-                      </div>
-
-                    </div>
-
-                 </div>
-               </div>
-               <div class="col-12"><img src="./images/bg.png" style="width: 100%;height: auto;" class="mt-2 mb-3" alt=""></div>
-             </div>
-           </div>
-
-
         </div>
+        <!-- <div class="col-6"></div> -->
+        <!-- next section below the slider -->
+        <col-12><img class="mt-3 mb-3" src="./images/bg.png" alt="" style="width: 100%;"></col-12>
+        <div class="col-12">
+          <h2 class="fw-bold fs-1">More stories</h2>
+        </div>
+        <!-- 3 imges section -->
+        <div class="col-9">
+          <div class="row">
+            <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+              <div class="div">
+                <img src="./images/img_236146_solana.jpg" style="height: 40%; width: 100%" alt="" />
+              </div>
+              <div class="d-flex flex-column fw-bold">
+                <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-success p-1 text-white lh-lg"
+                    style="font-size: 12px">CRYPTOCURRENCY</a></span>
+                <a href="" class="mw-f text-decoration-none text-dark lh-base">Solana Foundation launches new tools to
+                  enhance blockchain transactions</a>
+                <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span> Forbes
+                    India</a></span>
+                <p class="fw-normal mt-3 pb-4" style="font-size: 14px;font-family: Georgia;">21Shares has submitted a
+                  registration statement to the U.S. Securities
+                  ... <a style="color: blue; text-decoration: 1px solid blue" href="">Read more</a></p>
+                <a href="" class="fw-normal ws-f text-reset" style="font-size: 12px;overflow: hidden;">EXPLAINERS
+                  -------------------------------------</a>
+                <div class="row mt-2 bottom-img-txt">
+                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"><img
+                      src="./images/img_215535_unemploymentrateinindia.jpg" style="width: 100%;height: auto;" alt="">
+                  </div>
+                  <div class="col d-flex flex-column gap-2">
+                    <a href="" class="mw-f text-decoration-none text-dark lh-base">Unemployment rate in India (2008 to
+                      2024): Current rate, historical trends and more</a>
+                    <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                        Forbes India</a></span>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+              <div class="div">
+                <img src="./images/img_236487_section80d.jpg" style="height: 40%; width: 100%" alt="" />
+              </div>
+              <div class="d-flex flex-column fw-bold">
+                <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-info p-1 text-white lh-lg"
+                    style="font-size: 12px">EXPLAINERS</a></span>
+                <a href="" class="mw-f text-decoration-none text-dark lh-base">Section 80D of income tax act:
+                  Deductions, eligibility and benefits</a>
+                <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span> Forbes
+                    India</a></span>
+                <p class="fw-normal mt-3 pb-4" style="font-size: 14px;font-family: Georgia;">21Shares has submitted a
+                  registration statement to the U.S. Securities
+                  ... <a style="color: blue; text-decoration: 1px solid blue" href="">Read more</a></p>
+                <a href="" class="fw-normal ws-f text-reset" style="font-size: 12px;">NEWS
+                  -------------------------------------</a>
+                <div class="row mt-2 bottom-img-txt">
+                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"><img
+                      src="./images/img_236445_1_gettyimagessm.jpg" style="width: 100%;height: auto;" alt=""></div>
+                  <div class="col d-flex flex-column gap-2">
+                    <a href="" class="mw-f text-decoration-none text-dark lh-base">UK Elections 2024: British-Indian
+                      women who won Parliament seats</a>
+                    <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                        Forbes India</a></span>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+              <div class="div">
+                <img src="./images/img_236435_reading_shutterstock_642159373_sm.jpg" style="height: 40%; width: 100%"
+                  alt="" />
+              </div>
+              <div class="d-flex flex-column fw-bold">
+                <span class="mt-2 mb-2"><a href="" class="text-decoration-none ws-f bg-primary p-1 text-white lh-lg"
+                    style="font-size: 12px">NEWS</a></span>
+                <a href="" class="mw-f text-decoration-none text-dark lh-base">From NEET-UG paper leak to paradoxical
+                  Indo-China relationship: Our top stories of the week</a>
+                <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span> Forbes
+                    India</a></span>
+                <p class="fw-normal mt-3 pb-4" style="font-size: 14px;font-family: Georgia;">Read more about why women
+                  adopt a different networking technique in pr...<a style="color: blue; text-decoration: 1px solid blue"
+                    href="">Read more</a></p>
+                <a href="" class="fw-normal ws-f text-reset" style="font-size: 12px;">LIFE
+                  -------------------------------------</a>
+                <div class="row mt-2 bottom-img-txt">
+                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"><img
+                      src="./images/img_236438_autoroute_connecte.jpg" style="width: 100%;height: auto;" alt=""></div>
+                  <div class="col d-flex flex-column gap-2">
+                    <a href="" class="mw-f text-decoration-none text-dark lh-base">First stretch of smart highway opens
+                      in the US</a>
+                    <span><a href="" style="font-size: 12px" class="ws-f fw-bold"><span class="text-muted">by</span>
+                        Forbes India</a></span>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12"><img src="./images/bg.png" style="width: 100%;height: auto;" class="mt-2 mb-3" alt="">
+            </div>
+          </div>
+        </div>
+
+
       </div>
-     </div>
+    </div>
+  </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
